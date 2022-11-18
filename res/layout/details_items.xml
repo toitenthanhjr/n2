@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#CD853F"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thông tin sinh vien"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="293dp"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã Sinh Viên:"
+        android:textSize="25dp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="293dp"
+         />
+
+    <EditText
+        android:id="@+id/new_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#F4F4F4"
+        android:textSize="20dp" />
+    <TextView
+        android:textSize="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên Sinh Viên:" />
+
+    <EditText
+        android:id="@+id/new_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textCursorDrawable="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Đang dùng máy"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <Spinner
+        android:id="@+id/new_category"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/blue_spinner"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_save_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/cycle_item_view"
+            android:text="Save"
+            app:backgroundTint="#128DEF" />
+
+        <Button
+            android:id="@+id/button_back_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/cycle_item_view"
+            android:text="Back"
+            app:backgroundTint="#201F1F"
+            app:iconTint="#454545" />
+    </LinearLayout>
+</LinearLayout>
